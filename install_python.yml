@@ -1,6 +1,7 @@
 - hosts: RHEL
   remote_user: root
   gather_facts: false
+  use_backend: yum
   tasks:
 
    - name: Install Python
