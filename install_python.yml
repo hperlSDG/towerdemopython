@@ -3,7 +3,7 @@
   gather_facts: false
   tasks:
 
- - name: Install Python
-   yum:
-      name: pip
-      state: latest
+   - name: Install Python
+     yum:
+        name: pip
+        state: latest
