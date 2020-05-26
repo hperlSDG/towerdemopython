@@ -8,3 +8,8 @@
         name: python3
         state: latest
         use_backend: dnf
+   - name: Install Python-Pip
+     yum:
+        name: python-pip
+        state: latest
+        use_backend: dnf
