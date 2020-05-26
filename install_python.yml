@@ -4,6 +4,6 @@
   tasks:
 
  - name: Install Python
-      yum:
-        name: pip
-        state: latest
+   yum:
+      name: pip
+      state: latest
