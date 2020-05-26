@@ -7,4 +7,4 @@
      yum:
         name: pip
         state: latest
-        use_backend: yum
+        use_backend: dnf
