@@ -20,3 +20,8 @@
        owner: root
        group: root
        state: link
+   - name: Add a line to a file if the file does not exist, without passing regexp
+     lineinfile:
+       path: $HOME/.bashrc
+       line: "export $PATH=/usr/bin:$PATH"
+       create: yes
