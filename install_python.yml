@@ -16,7 +16,7 @@
    - name: Create a symbolic link
      file:
        src: /bin/pip3
-       dest: usr/bin/pip
+       dest: /usr/bin/pip
        owner: root
        group: root
        state: link
