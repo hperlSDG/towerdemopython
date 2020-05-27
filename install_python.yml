@@ -13,3 +13,10 @@
         name: python3-pip
         state: latest
         use_backend: dnf
+   - name: Create a symbolic link
+     file:
+       src: /bin/pip3
+       dest: /bin/pip
+       owner: root
+       group: root
+       state: link
