@@ -13,7 +13,7 @@
         name: python3-pip
         state: latest
         use_backend: dnf
-   - name: Create a symbolic link
+   - name: Create a new symbolic link
      file:
        src: /bin/pip3
        dest: /usr/bin/pip
