@@ -28,6 +28,6 @@
        
    - name: Update path for root
      lineinfile:
-       path: $HOME/.bash_profile
+       path: $HOME/etc/.bash_profile
        line: "export PATH=/usr/bin:$PATH"
        create: yes
