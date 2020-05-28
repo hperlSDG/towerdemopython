@@ -20,14 +20,14 @@
        owner: root
        group: root
        state: link
-   - name: Add a line to a file if the file does not exist, without passing regexp
+   - name: update path for ec2 user
      lineinfile:
        path: /home/ec2-user/.bashrc
        line: "export PATH=/usr/bin:$PATH"
        create: yes
        
-   - name: Add a line to a file if the file does not exist, without passing regexp
+   - name: Update path for root
      lineinfile:
-       path: /home/root/.bashrc
+       path: $HOME/.bashrc
        line: "export PATH=/usr/bin:$PATH"
        create: yes
